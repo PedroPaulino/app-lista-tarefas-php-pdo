@@ -1,5 +1,4 @@
-# Nome do projeto
-<h1 align="center"> Projeto Lista de Tarefas </h1>
+# Projeto Lista de Tarefas
 
 ## Descrição do Projeto
 Esse é um projeto acadêmico criado através do curso Desenvolvimento Web Completo 2022 dos professores Jorge Sant Ana e Jamilton Damasceno
