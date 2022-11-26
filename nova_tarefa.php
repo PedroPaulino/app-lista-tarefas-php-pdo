@@ -19,13 +19,20 @@
 			</div>
 		</nav>
 
+		<?php if(isset($_GET['inclusao']) && $_GET['inclusao'] == 1){ ?>
+			<div class="bg-success pt-2 text-white d-flex justify-content-center">
+				<h5>Tarefa inserida com sucesso !</h5>
+			</div>
+		<?php }; ?>
+		
 		<div class="container app">
 			<div class="row">
 				<div class="col-md-3 menu">
 					<ul class="list-group">
-						<li class="list-group-item"><a href="index.php">Tarefas pendentes</a></li>
-						<li class="list-group-item active"><a href="#">Nova tarefa</a></li>
-						<li class="list-group-item"><a href="todas_tarefas.php">Todas tarefas</a></li>
+					<li class="list-group-item active"><a href="nova_tarefa.php">Nova tarefa</a></li>
+                    <li class="list-group-item"><a href="index.php">Tarefas pendentes</a></li>
+                    <li class="list-group-item"><a href="tarefas_concluidas.php">Tarefas concluídas</a></li>
+                    <li class="list-group-item"><a href="todas_tarefas.php">Todas tarefas</a></li>
 					</ul>
 				</div>
 
@@ -36,10 +43,10 @@
 								<h4>Nova tarefa</h4>
 								<hr />
 
-								<form>
+								<form method="post" action="./tarefa_controller.php?acao=inserir">
 									<div class="form-group">
 										<label>Descrição da tarefa:</label>
-										<input type="text" class="form-control" placeholder="Exemplo: Lavar o carro">
+										<input type="text" class="form-control" placeholder="Exemplo: Lavar o carro" name="tarefa">
 									</div>
 
 									<button class="btn btn-success">Cadastrar</button>
