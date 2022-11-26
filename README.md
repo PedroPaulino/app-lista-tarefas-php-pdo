@@ -16,7 +16,15 @@ Além do projeto inicial foi acrescentado a funcionalidade de consultar as taref
 
 ### Features
 
-- ✔️ Nova tarefa
-- ✔️ Tarefas pendentes
-- ✔️ Tarefas concluídas (Feature adicional)
-- ✔️ Todas tarefas
+✔️ Nova tarefa
+✔️ Tarefas pendentes
+✔️ Tarefas concluídas (Feature adicional)
+✔️ Todas tarefas
+
+### Tcnologias usadas 🖊️
+ 
+- PHP 
+- JS
+- HTML
+- CSS
+- BOOTSTRAP v 4.1.3
